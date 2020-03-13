@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     axios
     .get(`http://localhost:5000/api/players`)
     .then(res => {
