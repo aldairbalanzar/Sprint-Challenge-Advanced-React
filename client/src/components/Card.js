@@ -8,11 +8,11 @@ class Card extends Component {
             width: '30%',
             border: '4px solid lightblue',
             padding: '1% 0 1% 6%',
-            margin: "1% 28%"
+            margin: "1% 34%"
           };
         return (
             <div>
-                <h1 style={mystyle}>{this.props.name}</h1>
+                <h2 style={mystyle}>Player: {this.props.name}</h2>
             </div>
         );
     }

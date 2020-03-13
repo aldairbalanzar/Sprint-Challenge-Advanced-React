@@ -12,6 +12,7 @@ const Navbar = () => {
       <h1>Player List App</h1>
       <div className="dark-mode__toggle">
         <div
+          data-testid="toggle"
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />

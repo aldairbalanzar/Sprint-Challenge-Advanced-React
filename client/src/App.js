@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     axios
     .get(`http://localhost:5000/api/players`)
     .then(res => {
@@ -33,7 +33,7 @@ class App extends Component {
 
   render() {
     return(
-      <div className="App">
+      <div data-testid="appTest" className="App">
         <Navbar />
         <h1>Player List:</h1>
         {this.state.players.map(item => {
